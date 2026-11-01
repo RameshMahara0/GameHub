@@ -54,3 +54,12 @@ GameHub/
         ├── index.html  # Trivia Quiz Game Page
         ├── style.css   # Purple Theme Styles
         └── script.js   # Question Array & Quiz Logic
+
+## 🚀 How to Run Locally
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/RameshMahara0/GameHub.git](https://github.com/RameshMahara0/GameHub.git)
+
+cd GameHub
+Double-click index.html or open it with Live Server in VS Code.
