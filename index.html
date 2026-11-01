@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub - Play Free Browser Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Game<span>Hub</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#games-section">Games</a></li>
+            <li><a href="#about-section">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <div class="hero">
+            <h1>Welcome to <span>GameHub</span></h1>
+            <p>Your destination for quick, fun browser games. Pick a game below and start playing instantly!</p>
+        </div>
+
+        <div id="games-section" class="section-header">
+            <h2>Featured Games</h2>
+            <span class="game-count">4 Games Available</span>
+        </div>
+
+        <div class="game-grid">
+
+            <!-- Tic Tac Toe Card -->
+            <a href="game/tictactoe/index.html" class="game-card-link">
+                <div class="game-card">
+                    <div class="card-banner ttt-bg">
+                        <span class="badge">Strategy</span>
+                        <div class="banner-title">Tic Tac Toe</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Tic Tac Toe</h3>
+                        <p>Classic 3x3 grid game. Play head-to-head with a friend or test your skills against the AI.
+                        </p>
+                        <div class="card-footer">
+                            <span class="play-link">Play Game &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Memory Card Game Card -->
+            <a href="game/memory/index.html" class="game-card-link">
+                <div class="game-card">
+                    <div class="card-banner memory-bg">
+                        <span class="badge">Puzzle</span>
+                        <div class="banner-title">Memory Match</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Memory Card Match</h3>
+                        <p>Test your memory recall by flipping cards to find matching pairs in as few moves as possible.
+                        </p>
+                        <div class="card-footer">
+                            <span class="play-link">Play Game &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Rock Paper Scissors Card -->
+            <a href="game/rps/index.html" class="game-card-link">
+                <div class="game-card">
+                    <div class="card-banner rps-bg">
+                        <span class="badge">Arcade</span>
+                        <div class="banner-title">Rock Paper Scissors</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Rock Paper Scissors</h3>
+                        <p>The timeless hand game against the computer. Battle to reach 5 points first!</p>
+                        <div class="card-footer">
+                            <span class="play-link">Play Game &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Trivia Quiz Card -->
+            <a href="game/quitz/index.html" class="game-card-link">
+                <div class="game-card">
+                    <div class="card-banner quiz-bg">
+                        <span class="badge">Trivia</span>
+                        <div class="banner-title">Trivia Quiz</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Trivia Quiz</h3>
+                        <p>Challenge your general knowledge across multiple categories and aim for a perfect score.</p>
+                        <div class="card-footer">
+                            <span class="play-link">Play Game &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- Mystery Coming Soon Card 1 -->
+            <div class="game-card disabled-card">
+                <div class="card-banner soon-bg">
+                    <span class="badge badge-soon">Locked</span>
+                    <div class="banner-title">Coming Soon</div>
+                </div>
+                <div class="card-body">
+                    <h3>???</h3>
+                    <p>A new game is currently under development. Stay tuned!</p>
+                    <div class="card-footer">
+                        <span class="play-link-disabled">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mystery Coming Soon Card 2 -->
+            <div class="game-card disabled-card">
+                <div class="card-banner soon-bg">
+                    <span class="badge badge-soon">Locked</span>
+                    <div class="banner-title">Coming Soon</div>
+                </div>
+                <div class="card-body">
+                    <h3>???</h3>
+                    <p>A new game is currently under development. Stay tuned!</p>
+                    <div class="card-footer">
+                        <span class="play-link-disabled">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Grid End -->
+        </div>
+
+        <!-- About Section -->
+        <div id="about-section" class="about-box">
+            <h2>About GameHub</h2>
+            <p>GameHub is a personal web development project built for practicing basic HTML, CSS, and vanilla
+                JavaScript. It was created strictly for learning purposes to explore multi-page routing, layout design,
+                game logic, and DOM manipulation directly in the browser!</p>
+        </div>
+
+    </div> <!-- Container End -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 GameHub. Built for learning & practice with HTML, CSS, and JS.</p>
+
+            <div class="social-links">
+                <a href="https://github.com/RameshMahara0" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/ramesh-mahara-891475332" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://www.instagram.com/rameshmahara01/" target="_blank"
+                    rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.facebook.com/ramesh.mahara.96930" target="_blank"
+                    rel="noopener noreferrer">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

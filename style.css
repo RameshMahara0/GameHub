@@ -1,0 +1,361 @@
+/* General Resets & Typography */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+}
+
+body {
+  background-color: #f1f5f9;
+  color: #1e293b;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 16px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.navbar .logo span {
+  color: #6366f1;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ffffff;
+}
+
+/* Layout Container */
+.container {
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 0 20px;
+  flex: 1;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  padding: 40px 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  margin-bottom: 35px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.hero h1 {
+  font-size: 32px;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.hero h1 span {
+  color: #4f46e5;
+}
+
+.hero p {
+  font-size: 16px;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Section Header */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
+  font-size: 22px;
+  color: #0f172a;
+}
+
+.game-count {
+  font-size: 13px;
+  background-color: #e0e7ff;
+  color: #3730a3;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* Game Grid & Cards */
+.game-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.game-card {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-color: #6366f1;
+}
+
+/* Custom Colored Banners for Each Game */
+.card-banner {
+  height: 120px;
+  position: relative;
+  padding: 15px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.ttt-bg {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+}
+
+.memory-bg {
+  background: linear-gradient(135deg, #10b981, #047857);
+}
+
+.rps-bg {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.quiz-bg {
+  background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(4px);
+}
+
+.banner-title {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.card-body {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-body h3 {
+  font-size: 18px;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.card-body p {
+  font-size: 13.5px;
+  color: #64748b;
+  line-height: 1.45;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.card-footer {
+  border-top: 1px solid #f1f5f9;
+  padding-top: 12px;
+}
+
+.play-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4f46e5;
+}
+
+/* About Box - Full Width Outside Grid */
+.about-box {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 28px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  width: 100%; /* Ensures it spans the full container width */
+}
+
+.about-box h2 {
+  font-size: 22px;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.about-box p {
+  font-size: 15px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+  background-color: #0f172a;
+  color: #64748b;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: auto;
+}
+/* Disabled / Coming Soon Card Styles */
+.disabled-card {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.disabled-card:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  border-color: #cbd5e1 !important;
+}
+
+/* Coming Soon Badge */
+.badge-soon {
+  background-color: rgba(15, 23, 42, 0.6) !important;
+  color: #fbbf24 !important;
+  border: 1px solid rgba(251, 191, 36, 0.4);
+}
+
+/* Gradients for Coming Soon Games */
+.snake-bg {
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+}
+
+.flappy-bg {
+  background: linear-gradient(135deg, #ec4899, #be185d);
+}
+
+.play-link-disabled {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #94a3b8;
+}
+
+/* Neutral Dark Gradient for Mystery Coming Soon Banner */
+.soon-bg {
+  background: linear-gradient(135deg, #475569, #334155);
+}
+
+.disabled-card {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+.disabled-card:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  border-color: #cbd5e1 !important;
+}
+
+.badge-soon {
+  background-color: rgba(15, 23, 42, 0.6) !important;
+  color: #94a3b8 !important;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+.play-link-disabled {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #94a3b8;
+}
+/* Footer & Social Links */
+.footer {
+  background-color: #0f172a;
+  color: #94a3b8;
+  padding: 24px 20px;
+  font-size: 14px;
+  margin-top: auto;
+  border-top: 1px solid #1e293b;
+}
+
+.footer-content {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #6366f1;
+}
+
+@media (min-width: 600px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
