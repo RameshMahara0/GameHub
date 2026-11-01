@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Match - GameHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Game<span>Hub</span></div>
+        <ul class="nav-links">
+            <li><a href="../../index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <a href="../../index.html" class="btn btn-back">← Back to Gallery</a>
+
+        <!-- Game Info & Rules -->
+        <div class="details-card">
+            <div class="details-banner">Memory Card Match</div>
+            <h2>Memory Card Match</h2>
+            <p>Flip two cards at a time to find matching animal pairs with as few moves as possible.</p>
+
+            <div class="rules-box">
+                <h3>How to Play:</h3>
+                <ul>
+                    <li>Click a card to reveal its hidden symbol.</li>
+                    <li>Click a second card to see if it matches the first.</li>
+                    <li>If they match, both stay face up. If not, they flip back over.</li>
+                    <li>Match all 6 pairs to win the game!</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Active Game Board -->
+        <div class="game-board-box">
+            <div class="game-stats">
+                <span><strong>Moves: </strong><span id="move-count">0</span></span>
+                <span><strong>Pairs Matched: </strong><span id="match-count">0</span> / 6</span>
+            </div>
+
+            <div id="status-msg" class="status-msg">Click any card to start!</div>
+
+            <div class="memory-grid" id="memory-grid">
+                <!-- Cards generated dynamically via JavaScript -->
+            </div>
+
+            <!-- End Game Celebration Banner -->
+            <div id="end-game-banner" class="end-game-banner win hidden">
+                <h3 id="end-game-title">🏆 Fantastic Memory!</h3>
+                <p id="end-game-sub">You matched all pairs!</p>
+                <button class="btn btn-reset" onclick="resetGame()">Play Again 🔄</button>
+            </div>
+
+            <button id="manual-reset-btn" class="btn btn-reset-small" onclick="resetGame()">Restart Game</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 GameHub. Built for learning & practice with HTML, CSS, and JS.</p>
+
+            <div class="social-links">
+                <a href="https://github.com/RameshMahara0" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/ramesh-mahara-891475332" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://www.instagram.com/rameshmahara01/" target="_blank"
+                    rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.facebook.com/ramesh.mahara.96930" target="_blank"
+                    rel="noopener noreferrer">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,357 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+}
+
+body {
+  background-color: #f1f5f9;
+  color: #1e293b;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 16px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+  flex: 1;
+}
+
+.details-card {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.details-banner {
+  height: 120px;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.details-card h2 {
+  font-size: 22px;
+  color: #92400e;
+  margin-bottom: 6px;
+}
+
+.details-card p {
+  color: #64748b;
+  font-size: 14.5px;
+}
+
+.rules-box {
+  background-color: #fffbe6;
+  border: 1px solid #fde68a;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.rules-box h3 {
+  font-size: 15px;
+  color: #b45309;
+  margin-bottom: 8px;
+}
+
+.rules-box ul {
+  margin-left: 20px;
+}
+
+.rules-box li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #92400e;
+}
+
+.game-board-box {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.scoreboard {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 20px;
+  background-color: #fffbe6;
+  padding: 12px 30px;
+  border-radius: 8px;
+  border: 1px solid #fde68a;
+}
+
+.score-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score-label {
+  font-size: 13px;
+  color: #b45309;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.score-value {
+  font-size: 32px;
+  font-weight: 800;
+  color: #d97706;
+}
+
+.score-divider {
+  font-size: 24px;
+  font-weight: 800;
+  color: #fcd34d;
+}
+
+.status-msg {
+  font-size: 18px;
+  font-weight: 700;
+  color: #d97706;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.choice-display {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.choice-box {
+  background-color: #fffbe6;
+  border: 1px solid #fde68a;
+  border-radius: 8px;
+  padding: 14px 24px;
+  text-align: center;
+  min-width: 140px;
+}
+
+.choice-box small {
+  display: block;
+  font-size: 12px;
+  color: #b45309;
+  margin-bottom: 6px;
+}
+
+.choice-icon {
+  font-size: 42px;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 9px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.btn-choice {
+  background-color: #d97706;
+  color: #ffffff;
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+.btn-choice:hover {
+  background-color: #b45309;
+  transform: translateY(-2px);
+}
+
+.btn-back {
+  background-color: #d97706;
+  color: #ffffff;
+}
+
+.btn-back:hover {
+  background-color: #b45309;
+}
+
+.btn-reset {
+  background-color: #10b981;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 24px;
+}
+
+.btn-reset:hover {
+  background-color: #059669;
+}
+
+.btn-reset-small {
+  background-color: #ef4444;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 6px 14px;
+  margin-top: 10px;
+}
+
+.btn-reset-small:hover {
+  background-color: #dc2626;
+}
+
+/* Match Winner / Loser Banner */
+.end-game-banner {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.end-game-banner.win {
+  background-color: #d1fae5;
+  border: 2px solid #10b981;
+  color: #065f46;
+}
+
+.end-game-banner.lose {
+  background-color: #fee2e2;
+  border: 2px solid #ef4444;
+  color: #991b1b;
+}
+
+.end-game-banner h3 {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.end-game-banner p {
+  font-size: 15px;
+  margin-bottom: 14px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.footer {
+  background-color: #0f172a;
+  color: #64748b;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: auto;
+}
+/* Animated Choice Boxes */
+.choice-icon {
+  font-size: 48px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Shake Animation while computing choice */
+.shake-player {
+  animation: shakePlayerAnim 0.6s ease-in-out;
+}
+
+.shake-computer {
+  animation: shakeComputerAnim 0.6s ease-in-out;
+}
+
+@keyframes shakePlayerAnim {
+  0% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-10px) rotate(-15deg); }
+  50% { transform: translateY(5px) rotate(10deg); }
+  75% { transform: translateY(-5px) rotate(-5deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+@keyframes shakeComputerAnim {
+  0% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-10px) rotate(15deg); }
+  50% { transform: translateY(5px) rotate(-10deg); }
+  75% { transform: translateY(-5px) rotate(5deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+/* Pulse highlight on result reveal */
+.choice-box.reveal {
+  animation: pulseBox 0.4s ease-in-out;
+}
+
+@keyframes pulseBox {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+/* Disable buttons during animation */
+.btn-choice:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+}
+.navbar .logo {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+.navbar .logo span {
+  color: #6366f1;
+}

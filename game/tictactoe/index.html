@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe - GameHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Game<span>Hub</span></div>
+        <ul class="nav-links">
+            <li><a href="../../index.html">Home</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <a href="../../index.html" class="btn btn-back">← Back to Gallery</a>
+
+        <!-- Game Info & Rules -->
+        <div class="details-card">
+            <div class="details-banner">Tic Tac Toe</div>
+            <h2>Tic Tac Toe</h2>
+            <p>Align 3 of your marks horizontally, vertically, or diagonally before your opponent does.</p>
+
+            <div class="rules-box">
+                <h3>How to Play:</h3>
+                <ul>
+                    <li>Played on a 3x3 grid.</li>
+                    <li>Players alternate turns placing X or O.</li>
+                    <li>First to align 3 marks wins.</li>
+                    <li>If all 9 cells fill up with no winner, it ends in a draw.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Active Game Board -->
+        <div class="game-board-box">
+            <div class="controls">
+                <label for="ttt-mode"><strong>Game Mode: </strong></label>
+                <select id="ttt-mode" onchange="changeTTTMode(this.value)">
+                    <option value="pvp">2-Player (Pass & Play)</option>
+                    <option value="ai">vs Computer (AI)</option>
+                </select>
+            </div>
+
+            <div id="ttt-status" class="status-msg">Player X's Turn</div>
+
+            <div class="ttt-grid">
+                <div class="ttt-cell" onclick="handleTTTClick(0)" id="cell-0"></div>
+                <div class="ttt-cell" onclick="handleTTTClick(1)" id="cell-1"></div>
+                <div class="ttt-cell" onclick="handleTTTClick(2)" id="cell-2"></div>
+                <div class="ttt-cell" onclick="handleTTTClick(3)" id="cell-3"></div>
+                <div class="ttt-cell" onclick="handleTTTClick(4)" id="cell-4"></div>
+                <div class="ttt-cell" onclick="handleTTTClick(5)" id="cell-5"></div>
+                <div class="ttt-cell" onclick="handleTTTClick(6)" id="cell-6"></div>
+                <div class="ttt-cell" onclick="handleTTTClick(7)" id="cell-7"></div>
+                <div class="ttt-cell" onclick="handleTTTClick(8)" id="cell-8"></div>
+            </div>
+
+            <!-- End Game Celebration / Draw Banner -->
+            <div id="end-game-banner" class="end-game-banner hidden">
+                <h3 id="end-game-title">Game Finished</h3>
+                <p id="end-game-sub">Click below to play again!</p>
+                <button class="btn btn-reset" onclick="resetTTT()">Play Again 🔄</button>
+            </div>
+
+            <button id="manual-reset-btn" class="btn btn-reset-small" onclick="resetTTT()">Reset Board</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 GameHub. Built for learning & practice with HTML, CSS, and JS.</p>
+
+            <div class="social-links">
+                <a href="https://github.com/RameshMahara0" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/ramesh-mahara-891475332" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://www.instagram.com/rameshmahara01/" target="_blank"
+                    rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.facebook.com/ramesh.mahara.96930" target="_blank"
+                    rel="noopener noreferrer">Facebook</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
